@@ -1,0 +1,82 @@
+.latest-blogs {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.latest-blogs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.latest-blogs .blog-posts-container {
+  display: flex;
+  gap: 1.5rem; /* Space mellan varje blogginlägg */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+  flex: 1 1 30%; /* Flexbox: lika stora kort med min. bredd 30% */
+  min-height: 250px; /* Säkerställer att alla inlägg har en minimal höjd */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ser till att innehållet fördelas jämnt */
+}
+
+.blog-post:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+.blog-post p {
+  color: #555;
+  margin: 0.5rem 0 1rem;
+  flex-grow: 1; /* Gör att texten växer om den behövs */
+}
+
+.blog-post img {
+  width: 100%; /* Gör bilden lika bred som sin container */
+  max-height: 200px; /* Begränsa maxhöjden för att undvika att den blir för stor */
+  object-fit: contain; /* Håller hela bilden synlig utan att den beskärs */
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post small {
+  color: #999;
+  text-align: right; /* Justera datum till höger */
+}
+
+.read-more-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}

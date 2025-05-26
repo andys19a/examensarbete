@@ -1,0 +1,64 @@
+/* Nav.css */
+
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navItem a,
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.navItem a:hover,
+.navLink:hover {
+  color: #f39c12;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: #34495e;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.dropdownMenu li a {
+  padding: 0.5rem 1rem;
+  color: white;
+  display: block;
+}
+
+.dropdownMenu li a:hover {
+  background-color: #3d566e;
+}
+
+/* Show dropdown when active */
+.dropdown.active .dropdownMenu {
+  display: block;
+}

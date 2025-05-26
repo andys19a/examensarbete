@@ -1,0 +1,47 @@
+.kontakt-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .kontakt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .kontakt-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .kontakt-button:hover {
+    background-color: #2980b9;
+  }
+  

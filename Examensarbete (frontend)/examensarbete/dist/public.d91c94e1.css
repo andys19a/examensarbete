@@ -1,0 +1,515 @@
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+}
+
+.navList {
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navItem a, .navLink {
+  color: #fff;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+.navItem a:hover, .navLink:hover {
+  color: #f39c12;
+}
+
+.dropdownMenu {
+  z-index: 100;
+  background-color: #34495e;
+  min-width: 180px;
+  margin: 0;
+  padding: .5rem 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 6px #0003;
+}
+
+.dropdownMenu li a {
+  color: #fff;
+  padding: .5rem 1rem;
+  display: block;
+}
+
+.dropdownMenu li a:hover {
+  background-color: #3d566e;
+}
+
+.dropdown.active .dropdownMenu {
+  display: block;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #2c3e50;
+  margin-top: auto;
+  padding: 1rem 0;
+}
+
+.latest-blogs {
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.latest-blogs h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.latest-blogs .blog-posts-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 30%;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 1rem;
+  transition: box-shadow .2s;
+  display: flex;
+}
+
+.blog-post:hover {
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+.blog-post h3 {
+  color: #34495e;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.blog-post a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+.blog-post p {
+  color: #555;
+  flex-grow: 1;
+  margin: .5rem 0 1rem;
+}
+
+.blog-post img {
+  object-fit: contain;
+  border-radius: 6px;
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: .5rem;
+}
+
+.blog-post small {
+  color: #999;
+  text-align: right;
+}
+
+.read-more-link {
+  text-align: center;
+  color: #3498db;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+.product-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  display: grid;
+}
+
+.product-card {
+  text-align: center;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px #00000026;
+}
+
+.product-image {
+  object-fit: contain;
+  border-radius: 4px;
+  width: 100%;
+  height: 150px;
+  margin-bottom: .5rem;
+}
+
+.product-card h3 {
+  color: #333;
+  min-height: 48px;
+  margin: .5rem 0 .25rem;
+  font-size: 1.1rem;
+}
+
+.product-card p {
+  color: #555;
+  margin: .25rem 0;
+}
+
+.product-link button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  margin-top: .5rem;
+  padding: .4rem .8rem;
+  font-size: .9rem;
+}
+
+.product-link button:hover {
+  background-color: #2980b9;
+}
+
+h2 {
+  text-align: center;
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+  display: block;
+}
+
+.kontakt-container {
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.kontakt-form {
+  flex-direction: column;
+  gap: 1.2rem;
+  display: flex;
+}
+
+.form-group {
+  flex-direction: column;
+  display: flex;
+}
+
+.form-group label {
+  margin-bottom: .4rem;
+  font-weight: 600;
+}
+
+.form-group input, .form-group textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .6rem;
+}
+
+.kontakt-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  padding: .75rem;
+  font-weight: bold;
+  transition: background .2s;
+}
+
+.kontakt-button:hover {
+  background-color: #2980b9;
+}
+
+.product-page {
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.product-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.product-page-image {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-price, .product-stock {
+  margin: .5rem 0;
+  font-weight: bold;
+}
+
+.product-description {
+  margin: 1rem 0;
+}
+
+.back-link {
+  color: #007bff;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.buy-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #5cc75c;
+  border: none;
+  border-radius: 6px;
+  padding: .6rem 1.2rem;
+  font-weight: bold;
+  transition: background-color .2s, transform .1s;
+}
+
+.buy-button:hover {
+  background-color: #48a948;
+}
+
+.buy-button:active {
+  transform: scale(.97);
+}
+
+.category-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.category-title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.category-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  display: grid;
+}
+
+.category-card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.category-image {
+  object-fit: contain;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.product-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  margin-top: .5rem;
+  padding: .5rem 1rem;
+}
+
+.category-button:hover {
+  background-color: #2980b9;
+}
+
+.category-title {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.category-description {
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.checkout-form {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: flex;
+  box-shadow: 0 4px 10px #0000000d;
+}
+
+.checkout-form button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  padding: .7rem 1rem;
+  font-weight: bold;
+  transition: background .2s;
+}
+
+.checkout-form button:hover {
+  background-color: #27ae60;
+}
+
+.payment-status {
+  color: #333;
+  font-size: .95rem;
+}
+
+.back-home-link {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.blogg-page {
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px #0000000d;
+}
+
+.blogg-page h1 {
+  color: #2c3e50;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+.blogg-page p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.blogg-page em {
+  color: #888;
+  font-size: .9rem;
+}
+
+.blogg-page img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+.blogg-nav {
+  justify-content: space-between;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.blogg-nav button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 4px;
+  padding: .6rem 1.2rem;
+  transition: background-color .2s;
+}
+
+.blogg-nav button:hover {
+  background-color: #1a242f;
+}
+
+.blogg-nav button:disabled {
+  cursor: default;
+  background-color: #ccc;
+}
+
+.blog-summary {
+  color: #555;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.blog-content {
+  color: #333;
+  white-space: pre-line;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=public.d91c94e1.css.map */
