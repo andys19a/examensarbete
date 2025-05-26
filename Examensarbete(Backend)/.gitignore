@@ -1,0 +1,9 @@
+# Ignorera node_modules (alla installerade moduler)
+node_modules/
+
+# Ignorera .env-filen (för att skydda hemligheter som API-nycklar)
+.env
+
+# Ignorera operativsystem-specifika filer
+.DS_Store  # macOS
+Thumbs.db  # Windows
