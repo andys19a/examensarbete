@@ -10,6 +10,7 @@ Port för backend: 3001
 Port för frontend: 1234
 
 Starta frontend= npm start
+
 Starta backend= node src/server.js
 
 
