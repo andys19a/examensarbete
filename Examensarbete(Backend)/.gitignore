@@ -1,15 +1,14 @@
-# Node.js dependencies
+# Ignorera Node.js dependencies
 node_modules/
 
-# Ignorera .env-filen (för att skydda hemligheter som API-nycklar)
+# Ignorera .env-filen för att skydda känsliga data
 .env
 
-# Operativsystem-specifika filer
-.DS_Store  # macOS
-Thumbs.db  # Windows
-
-# Git LFS files (om du använder Git LFS för stora filer som t.ex. databaser)
-*.mdb
-
-# Loggfiler (om du använder någon form av loggning)
+# Ignorera loggfiler
 *.log
+
+# macOS systemfiler
+.DS_Store
+
+# Git LFS-filer
+*.mdb

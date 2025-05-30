@@ -87,7 +87,7 @@ app.post('/api/subscribe', (req, res) => {
 
 // Stripe
 
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY); 
 
 
 app.post('/api/create-payment-intent', async (req, res) => {
